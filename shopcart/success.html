@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	
+	<meta property="og:type"          content="website" />
+	<meta property="og:title"         content="【阿噗購物】下單成功-購物，從阿噗開始" />
+	<meta property="og:description"   content="阿噗特賣，您的穿搭生活頻道。主營：女裝、男裝、鞋包配飾、美妝護膚、家居生活。滿NT$699免運 / 支持貨到付款 / 官方自營 / 100%正品保障 / 7天無憂退換貨。" />
+	<meta property="og:image"         content="https://d3o2c7bn83e5x8.cloudfront.net/image/shareIcon.jpg" />
+	<title>阿噗購物</title>
+	<meta name="description" content="阿噗特賣，您的穿搭生活頻道。主營：女裝、男裝、鞋包配飾、美妝護膚、家居生活。滿NT$699免運 / 支持貨到付款 / 官方自營 / 100%正品保障 / 7天無憂退換貨。!">
+
+	<!-- 安卓平台 chrome -->
+	<meta name="mobile-web-app-capable" content="yes">
+	<link rel="icon" sizes="192x192" href="https://d3o2c7bn83e5x8.cloudfront.net/image/shareIcon-mini.jpg">
+	<!-- ios平台 safari -->
+	<!-- <meta name="apple-mobile-web-app-capable" content="yes"> -->
+	<!-- <meta name="apple-mobile-web-app-status-bar-style" content="black"> -->
+	<link rel="apple-touch-icon-precomposed" href="https://d3o2c7bn83e5x8.cloudfront.net/image/shareIcon.jpg">
+
+	<!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
+
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="Expires" CONTENT="0">
+	<meta http-equiv="Cache-Control" CONTENT="no-cache">
+	<meta http-equiv="Pragma" CONTENT="no-cache">
+    <meta name="customerService">
+	<meta name="format-detection" content="telephone=yes"/>
+    <link rel="stylesheet" href="https://d3o2c7bn83e5x8.cloudfront.net/dist/mdui/css/mdui.css">
+	<link rel="stylesheet" href="https://d3o2c7bn83e5x8.cloudfront.net/dist/Swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="../css/common.css?v=20210126">
+    <style>
+        body{background:#F4F4F4;height: auto;min-height: 100%;}
+        .mdui-order{background: #fff; padding: 24px 0px 12px 0px;box-sizing: border-box;}
+		.mdui-order img.success{width: 50px; height: 50px;}
+		.mdui-order-2{background: #FFFCEE;height: 220px;padding: 44px 0px 28px 0px;}
+
+		.success-info {font-size: 12px;color: #363636;margin-top: 5px;}
+		.success-info a {color: #007AFF;text-decoration: none;}
+
+		.mdui-detail{padding: 4%;background: #FFFCEE;}
+		.mdui-detail .detail{margin-top: 22px;}
+		.mdui-detail .detail:first-child{margin-top: 0}
+		.mdui-detail .mdui-ordersn {margin-top: 5px}
+		.mdui-detail .mdui-ordersn span{font-size: 14px;color: #363636;line-height: 14px;}
+		.mdui-detail .mdui-ordersn .mdui-btn-copy{color: #9F8A60;min-width: initial;width:40px; text-align:center;padding: 0px; height:22px;border:1px solid #9F8A60;border-radius:2px;line-height:22px; font-size: 12px; margin-left: 5px;}
+		.mdui-detail .mdui-ordersn + span{display: block;margin-top: 6px;font-size: 12px;color: #979797;line-height: 12px;}
+		.mdui-detail .picList{overflow-x: auto;margin-top: 16px}
+		.mdui-detail .picList::-webkit-scrollbar {display:none}
+
+		.mdui-detail .picList .picBox{display: flex;}
+		.mdui-detail .picList img{height: 70px;height: 70px;margin-right: 10px;}
+		.mdui-detail .picList img:last-child{margin-right: 0}
+
+        .mdui-order-tip{background: #fff;color: #7B7B7B;padding: 18px 0 22px 0;font-size: 12px}
+        .mdui-order-tip .mdui-order-tip-text{color: #CE2424; margin: 0px 4px;}
+		.mdui-order-2 + .mdui-order-tip{margin-top: 126px;font-size: 14px}		
+
+		.mdui-toolbar{display:flex;color:#7B7B7B;justify-content:space-between;align-items:flex-end;padding:0 8px;background:#FFF;box-shadow:0 1px 1px 0 rgba(237,237,237,1);height: 40px!important;line-height: 40px!important}
+		.mdui-toolbar .right,
+		.mdui-toolbar .left{display: flex;height: 100%;align-items: end;}
+		.mdui-toolbar .text-icon-options{position:relative;height:30px;width:36px;display:inline-block;margin-top: 2px;margin-left:0}
+		.mdui-toolbar .text-icon-options>img{width:20px;height:auto;margin-left:-10px;position:absolute;left:50%;top:2px}
+		.mdui-toolbar img{width:17px;}
+		.mdui-toolbar .mdui-btn-icon{border-radius:0;font-size:12px}
+		.mdui-toolbar a>span{width: 100%;text-align:center;margin:0 auto;display:block;font-size:10px;line-height:12px;color:#363636;position:absolute;bottom:-4px}
+		.mdui-toolbar .mdui-logo{margin: 0 auto;display: flex;height: 100%;align-items:center;justify-content: center}
+		.mdui-toolbar .mdui-logo img {width: auto;height: 19px;border-radius: 0!important;}
+		
+		.mdui-card-aggregation{border-radius: 0px; margin-top: 10px;box-shadow: none;}
+    	.mdui-card-aggregation .mdui-card-product-content > a{text-decoration: none;display: inline-block}
+    	.mdui-card-aggregation > .mdui-card-content{padding:0px; }
+		.mdui-card-aggregation .mdui-card-media{padding-bottom: 100%;}
+		.mdui-card-aggregation .mdui-card-media img{position: absolute; width: 100%; height: 100%; top: 0; left: 0; border-radius: 0px !important;}
+		.mdui-card-aggregation .mdui-card-product-content{-webkit-overflow-scrolling: touch;box-sizing: border-box;padding: 12px 4% 6px; white-space: nowrap; overflow-x: auto;}
+		.mdui-card-aggregation .mdui-card-product-content .mdui-card-product{width: 120px; margin-right: 10px; box-shadow: none;}
+		.mdui-card-aggregation .mdui-card-product-content .mdui-card-product-content{padding: 8px 4px 0}
+    	.mdui-card-aggregation .mdui-card-header{height: initial; padding: 12px 4%; border-bottom: 1px solid #EDEDED;}
+		.mdui-card-aggregation .mdui-card-header .mdui-card-header-title{margin-left: initial;opacity: 1; color: #363636;}
+		.mdui-card-product-content{padding: 5px; color: #363636;}
+		.mdui-card-product-content .mdui-card-product-title{overflow: hidden;text-overflow: ellipsis;width: 100%;white-space: nowrap; display: block; line-height: 24px;}
+		.mdui-card-product-content .mdui-card-product-discountprice{color: #B4272D; line-height: 16px; display: inline-block;font-size: 16px;}
+		.mdui-card-product-content .mdui-card-product-discountprice::before{content: 'NT$';font-size: 12px;line-height: 12px;}
+		.mdui-card-product-content .mdui-card-product-orignalprice{color: #7B7B7B; line-height: 12px;font-size: 12px; display: inline-block;text-decoration: line-through;}
+		.mdui-card-product-content .mdui-card-product-orignalprice::before{content: 'NT$';font-size: 12px;line-height: 12px;}
+		/*適配iphone5*/
+    	@media (max-width: 320px){
+			.mdui-card-aggregation > .mdui-card-product-content .mdui-card-product{width: 110px;}
+			.mdui-card-aggregation > .mdui-card-content{height: 190px;}
+			.mdui-card-aggregation .mdui-card-product-content .mdui-card-product{width: 100px;}
+		}
+		@media (min-width: 750px){
+			.mdui-card-aggregation .mdui-card-product-content .mdui-card-product{width: 180px;}
+			.mdui-card-aggregation > .mdui-card-content{height: auto;}
+		}
+
+		.serviceCard{padding: 12px;}
+		.serviceCard div{padding: 4px 0 10px;}
+		.serviceCard table{box-shadow: none}
+		.serviceCard table tr:first-child{background: #FBFBFB;font-weight: bold;}
+		.serviceCard table tr td{padding: 9px 0!important; line-height: 14px;text-align: center;border-right: 1px solid rgba(0, 0, 0, .12);}
+		.serviceCard table tr td:first-child{max-width: 60px;}
+		.serviceCard table tr td:last-child{border-right: 0;}
+		.serviceCard table tr td button{color: #B4272D; border: 1px solid #B4272D; border-radius: 4px;min-width: auto; padding: 4px 7px; line-height: 13px; height: 22px;font-size: 13px;}
+		.serviceCard table tr td a {font-size: 13px;color: #B4272D;padding: 2px 8px;border-radius: 4px;border: 1px solid #B4272D;text-decoration: none;}
+		/*订单详情*/
+		.card{margin: 10px 0 0;border-radius: 6px;overflow: hidden;background: #fff;}
+		div.card:last-child{margin-bottom: 40px;}
+		.mdui-list-item:hover{background: #fff;}
+		.mdui-address{position:relative;box-sizing:border-box;background:#FFFCEC url(https://d3o2c7bn83e5x8.cloudfront.net/image/border.jpg) bottom repeat-x;font-size:14px;color:#363636;padding:12px 4%;cursor:pointer}
+		.mdui-address span{display:inline-block;margin-right:12px;line-height:24px;font-weight:700;font-size: 16px}
+		.mdui-address span:nth-child(3){display:block;font-weight:500;font-size: 12px}
+		.mdui-address span:nth-child(4){display:block;font-weight:500;font-size: 12px}
+		.mdui-address .mdui-icon{position:absolute;top:23px;right:4%;font-size:24px;margin-right:-10px;color:#979797!important}
+		.order-content{font-size:12px;line-height:18px;color:#7B7B7B;padding:9px 4%;}
+		.order-content .mdui-address{background:#FFFCEC url(https://d3o2c7bn83e5x8.cloudfront.net/image/border.jpg) bottom repeat-x;}
+		.order-content, .package-content{background: #F4F4F4;border-top:1px solid #EDEDED}
+		.order-content > div, .package-content > div{border-radius: 8px;background: #fff;margin-top: 10px;overflow: hidden;}
+		.order-content > div:last-child, .package-content > div:last-child{margin-bottom: 80px;}
+		.order-contains{overflow-y: auto;}
+		.order-contains a{text-decoration: none;}
+		.order-contains .order-item{margin:14px 4% 0;position:relative}
+		.order-contains .order-item img{width:80px;height: 80px;}
+		.order-contains .order-item .order-item-details{width: calc(100% - 90px);float:right}
+		.order-contains .order-item .order-item-details .top .tags{border: 1px solid #7B7B7B;width:25px;background:#fff;border-radius:12px;font-size:12px;line-height:12px;color:#7B7B7B;margin-top:2%;padding:2px 8px;display:block}
+		.order-contains .order-item .order-item-details .top{font-size: 0;}
+		.order-contains .order-item .order-item-details .title{overflow:hidden;text-overflow:ellipsis;display:block;width:100%;white-space:nowrap;font-size:14px;color:#363636}
+		.order-contains .order-item .order-item-details .sku{font-size:12px;color:#979797;display:block;margin-top:8px}
+		.order-contains .order-item .order-item-details .bottom{position:absolute;width:calc(100% - 90px);bottom:4px}
+		.order-contains .order-item .order-item-details .bottom span{font-size:14px;color:#B4272D}
+		.order-contains .order-item .order-item-details .bottom .originalPrice{margin-left:2px;font-size:12px;color:#7B7B7B;text-decoration:line-through}
+		.order-price{box-sizing:border-box;border-top:1px solid #EDEDED;padding:15px 4%;font-size:12px;color:#777;}
+		.order-price ul{padding: 0;}
+		.order-price ul li{display: flex;padding: 0;min-height: 12px;line-height: 12px;font-size: 12px;margin-bottom: 18px;}
+		.order-price ul li:after{height: auto;}
+		.order-price ul li:last-child{margin-bottom: 0;}
+		.order-price ul li span{width: 50%;}
+		.order-price ul li div{flex:1;text-align: right;}
+		.order-price ul li .mdui-btn-copy{background: #fff;color: #B4272D;font-size: 12px;border: 0;line-height: 12px;}
+		.order-price ul li .mdui-btn-copy:hover{outline: none}
+		.order-price ul li .orderDiscount::before{content: '-';font-size: 18px;line-height: 14px;}
+		.order-price ul li.order-pay{box-sizing:border-box;border-top:1px dashed #EDEDED;font-size:16px;color:#363636;display: flex;margin: 4px 0 0;padding-top: 10px;}
+		.order-price ul li.order-pay span{color: #000}
+		.order-price ul li.order-pay div{color: #B4272D;text-align: right;display: flex;justify-content: flex-end}
+		.order-price ul li.order-pay div i{font-size: 12px;color: #B4272D;font-style: normal;margin-right: 2px;}
+		.option ul{margin: 0;padding: 0;list-style: none;}
+		.option ul li,
+		.option ul li a{display: flex;justify-content: space-between;align-items: center;color: #000;text-decoration: none;width: 100%}
+		.option ul li:last-child h4{line-height: 56px;margin: 0;}
+		.option ul li img{width: 20px;margin-left: 18px;margin-right: 23px;}
+		.option ul li div{border-bottom: 1px solid #EDEDED;height: 56px;}
+		.option ul li:last-child div{border-bottom:0}
+		.option ul li div:nth-child(2){flex: 1}
+		.option ul li div h4{font-size: 14px;line-height: 14px;margin: 11px 0 6px;font-weight: normal;color: #000}
+		.option ul li div p{font-size: 12px;line-height: 14px;color: #777777;margin: 6px 0 11px;}
+		.option ul li div i{margin: 16px 0;}
+		.success-img{
+			width:90%;margin:20px auto;
+		}
+		.success-img img{
+			width:100%;
+		}
+	</style>
+	<script>
+		var montiorTime={start:0,end:0};function setStart(){montiorTime.start=(new Date).getTime()}function setEnd(){montiorTime.end=(new Date).getTime(),cacheSessionStorage.setCache("montiorTime",{aimsFromUrl:location.href,params:[montiorTime]})}
+	</script>
+</head>
+<body class="mdui-bottom-nav-fixed mdui-appbar-with-toolbar mdui-loaded" onload="setStart()" onbeforeunload="setEnd()">
+	<div class="mdui-appbar mdui-appbar-fixed mdui-shadow-0">
+		<div class="mdui-toolbar-title">
+			<div class="top-left-options">
+				<a href="../shop/index.html" class="mdui-btn mdui-btn-icon toHome text-icon-options"><img src="https://d3o2c7bn83e5x8.cloudfront.net/image/icon/icon-homepage.png" /></a>
+			</div>
+			<!-- <div class="mdui-center mdui-valign point-progress mdui-logo">
+				<ul>
+					<li class="active"><i>1</i></li>
+					<li class="active"></li>
+					<li class="active"><i>2</i></li>
+					<li class="active"></li>
+					<li class="active"><i>3</i></li>
+				</ul>
+				<ul>
+					<li class="active"><i>確認商品</i></li>
+					<li class="active"><i>填寫付款資料</i></li>
+					<li class="active"><i>訂購完成</i></li>
+				</ul>
+			</div> -->
+			<div class="mdui-center mdui-valign point-progress point-progress-min">
+				<ul>
+					<li class="active"><i>1</i></li>
+					<li class="active"></li>
+					<li class="active"><i>2</i></li>
+				</ul>
+				<ul>
+					<li class="active"><i>確認訂單信息</i></li>
+					<li class="active"><i>訂購完成</i></li>
+				</ul>
+			</div>
+			<div class="top-right-options">
+				<!-- <a href="../user/order.html" class="text-icon-options"><img src="https://d3o2c7bn83e5x8.cloudfront.net/image/icon/icon-order.png" /></a> -->
+			</div>
+		</div>
+	</div>
+	
+	<div id="type1" style="display: none;" >
+		<div class="mdui-order">
+			<div class="mdui-text-center">
+				<img class="success" src="https://d3o2c7bn83e5x8.cloudfront.net/image/icon-success.png">
+			</div>
+			<div class="mdui-text-center mdui-m-y-1">
+				<span>下單成功</span>
+				<p style="
+					text-align: center;
+					width: 96%;
+					margin: 0 auto;
+					line-height: 20px;
+					margin-top: 10px;
+					font-size: 12px;
+					color: #999;
+				">尊敬的用戶！<br>為了提供優質服務，即日起您的簽收記錄將會計入平臺<br>信譽，累計超過2次拒收，將有損您的平臺信譽度，請註意簽收哦！</p>
+				<!-- <div class="success-info">如有修改/ 取消訂單之需求，請<a href="https://m.facebook.com/messages/thread/611216329002634" target="_blank">聯繫客服</a></div> -->
+			</div>
+		</div>
+		<div class="mdui-detail"></div>
+		<div style="background:#fff;padding-bottom: 1px;padding-top:10px;margin-top: -2px">
+			<!-- <a href="../user/order.html?state=haveBack" id="see-detail" class="mdui-btn mdui-btn-block" style="height: 38px; border-radius: 4px; background: #FFFFFF;border: 1px solid #B4272D; width: 90%; margin: 0px auto; font-size:16px;color: #B4272D;">查詢訂單</a> -->
+			<!-- <a id="seeDetail" class="mdui-btn mdui-btn-block" style="height: 38px; border-radius: 4px; background: #FFFFFF;border: 1px solid #B4272D; width: 90%; margin: 0px auto; font-size:16px;color: #B4272D;">查看訂單詳情</a> -->
+			<a href="javascript:void(0)" onclick="tools.openApp(true)" class="mdui-btn mdui-btn-block" style="height: 38px; border-radius: 4px; background: #FFFFFF;border: 1px solid #B4272D; width: 90%; margin: 0px auto; font-size:16px;color: #B4272D;">查單，請下載阿普特賣APP</a>
+			<div class="success-img" onclick="tools.openTech()">
+				<img src="../image/activity/downApp.png" class="downImg" alt="">
+			</div>
+		</div>
+			
+		<div class="mdui-card mdui-card-aggregation serviceCard">
+			<div>如果您有任何售後的問題，可以通過以下方式聯系我們</div>
+			<table class="mdui-table">
+				<tr>
+					<td>方式</td>
+					<td>賬號ID/號碼</td>
+					<td>操作</td>
+				</tr>
+				<tr>
+					<td>Messenger</td>
+					<td>阿噗特賣</td>
+					<td>
+						<!-- <button class="mdui-btn mdui-color-default mdui-btn-copy" data-clipboard-text="阿噗特賣">復制</button> -->
+						<a href="https://m.facebook.com/messages/thread/611216329002634" target="_blank">前往</a>
+					</td>
+				</tr>
+				<tr>
+					<td>Line</td>
+					<td>@841dxfwu</td>
+					<td>
+						<!-- <button class="mdui-btn mdui-color-default mdui-btn-copy" data-clipboard-text="@841dxfwu">復制</button> -->
+						<a href="https://lin.ee/6MI0Wcz" target="_blank">前往</a>
+					</td>
+				</tr>
+				<tr>
+					<td>客服電話</td>
+					<td>+852 65287866</td>
+					<td>
+						<button class="mdui-btn mdui-color-default mdui-btn-copy" data-clipboard-text="+852 65287866">復制</button>
+						<a href="tel:852 65287866" style="position:relative;top:2px;">撥打</a>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<div class="mdui-card mdui-card-aggregation mdui-card-agg-list"></div>
+
+		<div class="mdui-card mdui-card-aggregation mdui-card-suggest-list"></div>
+
+	</div>
+	
+	<div id="type2" style="display: none;" >
+		<div class="mdui-order mdui-order-2">
+			<div class="mdui-text-center">
+				<img class="success" src="https://d3o2c7bn83e5x8.cloudfront.net/image/icon-success.png">
+			</div>
+			<div class="mdui-text-center mdui-m-y-2" style="font-size: 16px;">
+				<span>下單成功</span>
+			</div>
+	        
+	        <div class="mdui-text-center" style="font-size: 14px;color: #7B7B7B;">
+	        	<span>歡迎您再次光臨阿噗特賣</span>
+	        </div>
+		</div>
+		<div class="mdui-text-center mdui-order-tip">
+	    	<span class="mdui-order-tip-text">3s</span>後將自動進入阿噗特賣</span>
+	    </div>
+	    <a href="../shop/index.html" class="mdui-btn mdui-btn-block" style="height: 38px; border-radius: 4px; background: #FFFFFF;border: 1px solid #B4272D; width: 90%; margin: 0px auto;margin-top: 16px; font-size:16px;color: #B4272D;">進入商城</a>
+	    <a href="../user/order.html" class="mdui-btn mdui-btn-block" style="height: 38px; border-radius: 4px; background: #B4272D;border: 1px solid #B4272D; width: 90%; margin: 0px auto;margin-top: 16px; font-size:16px;color: #fff;">查詢訂單</a>
+	</div>
+
+	<!--订单详情弹框-->
+	<div class="orderDetail view-bottom">
+		<div class="view-bottom-box view-bottom-box-big">
+			<div class="view-bottom-head">
+				<button class="close"><img src="https://d3o2c7bn83e5x8.cloudfront.net/image/icon/icon-close2.png" class="close-pub"></button>
+				<span>訂單詳情</span>
+				<button class="success" style="visibility: hidden;"></button>
+			</div>
+			<div class="view-bottom-content order-content havfooter"></div>
+			<div class="view-bottom-footer">
+				<button class="buyAgain" >再次購買</button>
+			</div>
+		</div>
+	</div>
+	
+</body>
+<script src="https://d3o2c7bn83e5x8.cloudfront.net/dist/mdui/js/mdui.js"></script>
+<script src="https://d3o2c7bn83e5x8.cloudfront.net/dist/clipboard/dist/clipboard.min.js"></script>
+<script src="https://d3o2c7bn83e5x8.cloudfront.net/dist/art-template/lib/template-web.js"></script>
+<script src="https://d3o2c7bn83e5x8.cloudfront.net/dist/Swiper/js/swiper.min.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script src="../js/common.js?v=20210603"></script>
+<script>
+	commonConfig.addUtJsAsync('https://www.googletagmanager.com/gtag/js?id=' + commonConfig.getGATracking());
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag("config",commonConfig.getGATracking());
+	if(commonConfig.getGATracking() != 'UA-117174835-1'){
+		gtag("config",'UA-117174835-1');
+	}
+</script>
+
+<!-- TikTok Pixel Code Start -->
+<script>
+	!function (w, d, t) {
+	  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++
+	)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src=i+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+	
+	
+	  ttq.load('C2QQE5LHLML93MBD1QM0');
+	  ttq.page();
+	}(window, document, 'ttq');
+</script>
+<!-- TikTok Pixel Code End -->
+<!-- LINE Tag Base Code -->
+<!-- Do Not Modify -->
+<script>
+    (function(g,d,o){
+        g._ltq=g._ltq||[];g._lt=g._lt||function(){g._ltq.push(arguments)};
+        var h=location.protocol==='https:'?'https://d.line-scdn.net':'http://d.line-cdn.net';
+        var s=d.createElement('script');s.async=1;
+        s.src=o||h+'/n/line_tag/public/release/v1/lt.js';
+        var t=d.getElementsByTagName('script')[0];t.parentNode.insertBefore(s,t);
+    })(window, document);
+    _lt('init', {
+        customerType: 'account',
+        tagId: '27aef063-382b-4b06-8293-f13e267413d4'
+    });
+    _lt('send', 'pv', ['27aef063-382b-4b06-8293-f13e267413d4']);
+</script>
+<noscript>
+    <img height="1" width="1" style="display:none" src="https://tr.line.me/tag.gif?c_t=lap&t_id=27aef063-382b-4b06-8293-f13e267413d4&e=pv&noscript=1" />
+</noscript>  
+<!-- End LINE Tag Base Code --> 
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', commonConfig.getFbPiexId());
+    fbq('track', 'PageView');
+</script>
+<script id="mdui-card-aggregation-text" type="text/html">
+	<div class="mdui-card-header">
+	    <div class="mdui-card-header-title"><%= tit %></div>
+	</div>
+	<div class="mdui-card-content">
+		<div class="mdui-card-product-content">
+			<% for (var i = 0; i < list.length; i++) { %>
+			<a href="../product/index.html?id=<%=list[i].id%>">
+				<div class="mdui-card mdui-card-product">
+			        <div class="mdui-card-media">
+			          	<img src="<%=list[i].product_sku_img%>"/>
+			        </div>
+			        <div class="mdui-card-content mdui-card-product-content">
+			           	<div class="mdui-card-product-title"><%=list[i].title%></div>
+			           	<div class="mdui-card-product-discountprice"><%=list[i].min_price%></div>
+			           	<% if (list[i].original_price > list[i].min_price) { %>
+			           		<div class="mdui-card-product-orignalprice"><%=list[i].original_price%></div>
+		           		<% } %>
+			        </div>
+		      	</div>
+			</a>
+			<% } %>
+		</div>
+    </div>
+</script>
+
+<script type="text/html" id="orderDetail">
+	<% for(var i = 0;i < data.length; i++){ %>
+		<div class='detail'>
+			<div class="mdui-ordersn">
+				<span>訂單號 : <%= data[i].code %></span>
+			 	<button class="mdui-btn mdui-color-default mdui-btn-copy" data-clipboard-text="<%= data[i].code %>">複製</button>
+			</div>
+			<span>將從<%= data[i].storehouseId || 1 %>號倉出庫，預計10～15個工作天到貨</span>
+			<div class="picList">
+				<div class='picBox' style="width:<%= data[i].orderProducts.length*80 %>px">
+					<% for(var j = 0;j < data[i].orderProducts.length; j++){ %>
+						<img src="<%= data[i].orderProducts[j].productImageUrl %>">
+					<% } %>
+				</div>
+			</div>
+		</div>
+	<% } %>
+</script>
+
+<!--订单详情-->
+<script id="ordersDetail" type="text/html">
+	<div class="mdui-address card">
+		<span><%= address.consignee %></span>
+		<span><%= address.tel %></span>
+		<span><%= address.detail %> <%= address.city %></span>
+		<span><%= address.detail2 %></span>
+	</div>
+	<div class="order-contains" style="padding-bottom:10px;">
+		<% for (var i = 0; i < orderProducts.length; i++) { %>
+			<!-- <a href="../product/index.html?id=<%= orderProducts[i].product_id %>"> -->
+				<div class="order-item">
+					<img src="<%= orderProducts[i].product_image_url %>" />
+					<div class="order-item-details">
+						<div class="top">
+							<span class="title"><%= orderProducts[i].product_title %></span>
+							<span class="sku"><%= orderProducts[i].product_sku_name %></span>
+						</div>
+						<div class="bottom">
+							<span class="mdui-float-left">NT$<%= orderProducts[i].discount_price %></span>
+							<span class="mdui-float-right" style="color:#979797;font-size: 12px;">x <%= orderProducts[i].quantity %></span>
+							<% if(orderProducts[i].cancel_product_count != 0){ %>
+								<% if(orderProducts[i].cancel_product_count == orderProducts[i].quantity){ %>
+									<span class="mdui-float-right cacelSpan">已取消</span>
+								<% } %>
+								<% if(orderProducts[i].cancel_product_count < orderProducts[i].quantity){ %>
+									<span class="mdui-float-right cacelSpan"><%= orderProducts[i].cancel_product_count %>件已取消</span>
+								<% } %>
+							<% } %>
+							
+						</div>
+					</div>
+				</div>
+				<% if(orderProducts[i].isLimitProduct == "true" || orderProducts[i].isLimitProduct == true){ %>
+					<div class="isLimitPro" style="padding-left:4%;margin-top:6px;">
+						<img src="../image/icon/icon-caveat.png" alt="" style="width: 14px;margin-right: 5px;position: relative;top: 2px;"> <i style="font-style:normal;font-size:12px;color:#ED1B2E;">限量出清，不可退換</i>
+					</div>
+				<% } %>
+			<!-- </a> -->
+			<% if(orderProducts[i].sale_service_in > 0 || orderProducts[i].sale_service_pass > 0 || orderProducts[i].sale_service_reject > 0){ %>
+				<div class="returnTip">
+					<ul>
+						<% if(orderProducts[i].sale_service_in > 0){ %>
+							<li onclick="app.return.initHistory(false)">
+								退換貨售後，處理中...
+								<i class="mdui-icon material-icons mdui-text-color-grey-500 array-right">keyboard_arrow_right</i>
+							</li>
+						<% }else if(orderProducts[i].sale_service_pass > 0 || orderProducts[i].sale_service_reject > 0){ %>
+							<li onclick="app.return.initHistory(false)">
+								退換貨售後，已完成
+								<i class="mdui-icon material-icons mdui-text-color-grey-500 array-right">keyboard_arrow_right</i>
+							</li>
+						<% } %>
+					</ul>
+				</div>
+			<% } %>
+		<% } %>
+	</div>
+	<div class="order-price">
+		<ul class="mdui-list">
+			<li class="mdui-list-item">
+				<span class="orderProCount">共<%= $imports.orderSkuCount1(newOrders,paymentType) %>件商品，原價合計</span>
+				<div class="orderPay">NT$<%=orders.originalTotalPrice%></div>
+			</li>
+			<li class="mdui-list-item">
+				<span class="label">運費</span>
+				<div class="orderExpressCount">NT$<%=orders.freight %></div>
+			</li>	
+			<% if(orders.originalTotalPrice > (orders.discountTotalPrice + orders.randomReductionPrice)){ %>
+				<li class="mdui-list-item">
+					<span class="label">優惠</span>
+					<div class="orderDiscount">NT$<%= $imports.fixed2(orders.originalTotalPrice, orders.discountTotalPrice + orders.randomReductionPrice) %></div>
+				</li>
+			<% } %>
+			<% if(orders.randomReductionPrice > 0){ %>
+				<li class="mdui-list-item">
+					<span class="label">隨機立減</span>
+					<div class="orderDiscount">NT$<%= $imports.fixed2(orders.randomReductionPrice, 0) %></div>
+				</li>
+			<% } %>
+			<li class="mdui-list-item order-pay">
+				<% if(orders.paymentType == 1){ %>
+					<span class="label">實際應付</span>
+				<% }else { %>
+					<span class="label">實際支付</span>
+				<% } %>
+				<div><i>NT$</i><%= orders.totalPrice %></div>
+			</li>
+		</ul>
+	</div>
+	<div class="order-price">
+		<ul class="mdui-list">
+			<li class="mdui-list-item">
+				<span>下單時間</span>
+				<div><%= $imports.dateFormatMoment(orders.createdAt, 19) %></div>
+			</li>
+			<li class="mdui-list-item">
+				<span>付款方式</span>
+				<% if(orders.paymentType == 1){ %>
+					<div>貨到付款</div>
+				<% }else{ %>
+					<div>在線支付</div>
+				<% } %>
+			</li>
+			<li class="mdui-list-item">
+				<span>訂單編號</span>
+				<div><button class="mdui-btn-copy" data-clipboard-text="<%=orders.code%>">複製</button><%= orders.code %></div>
+			</li>
+		</ul>
+	</div>
+	<div class="order-service option card">
+		<ul>
+			<!-- <li class="returnHistory" onclick="app.return.initHistory(false)">
+				<img src="https://d3o2c7bn83e5x8.cloudfront.net/image/icon/icon-return-2.png">
+				<div>
+					<h4>售後記錄</h4>
+					<p>此包裹中的商品退換貨記錄</p>
+				</div>
+				<div><i class="mdui-icon material-icons mdui-text-color-grey-500 array-right">keyboard_arrow_right</i></div>
+			</li> -->
+			<li>
+				<a href='https://m.facebook.com/messages/thread/<%= $imports.getCustomerIdByHost() %>' target='_blank' class="customer_service">
+					<img src="https://d3o2c7bn83e5x8.cloudfront.net/image/icon/icon-customer-service2.png">
+					<div><h4>在線客服</h4></div>
+					<div><i class="mdui-icon material-icons mdui-text-color-grey-500 array-right">keyboard_arrow_right</i></div>
+				</a>
+			</li>
+		</ul>
+	</div>
+</script>
+
+<script>
+	template.defaults.imports.orderSkuCount1 = function(order, paymentType) {
+		let newCount = 0,cancelCount = 0
+		for(var i = 0; i < order.length; i++) {
+			newCount += parseInt(order[i].quantity)
+			cancelCount += parseInt(order[i].cancel_product_count || 0)
+		}
+		if(paymentType == 1){
+			return newCount-cancelCount
+		}else{
+			return newCount
+		}
+	}
+	template.defaults.imports.fixed2 = function(price1,price2) {
+		return (price1 - price2).toFixed(2)
+	}
+	template.defaults.imports.getCustomerIdByHost = function() {
+		return commonConfig.getCustomerIdByHost()
+	}
+</script>
+
+<script>
+    var $$ = mdui.JQ;
+    var app = {
+        data : {
+        	leftTime : 5,
+            userOrderCode : [],
+			buyAginData: null // 用於再次購買時數據處理
+        } ,
+        methods : {
+            init : function(){
+				app.methods.initData();
+				tools.initScopeInfo();
+				app.methods.getClick();
+                app.methods.initClipboard();
+				app.methods.changeBanner();
+			},
+			// 更换成功页banner
+			changeBanner: function(){
+					$$.ajax({
+						url : commonConfig.websitePrefix() + '/api/system/banner/type?type=H1',
+						success: function (data) {
+							// 格式化数据
+							if(data.statusCode == 'OK'){
+								$$('.downImg').attr('src', data.body[0].imgurl)
+							}
+						},
+						// complete : function(){
+						// 	app.methods.hideLoading();
+						// },
+						error:function(error){
+							// if(!error.responseText){
+							// 	mdui.snackbar({message: '好像出了點小問題,要不您先看看別的(=^_^=)...',position: 'top'});
+							// }
+						}
+					});
+				},
+			initUserFootprint : function(orderCode){
+				// 相似商品
+				if($$('.mdui-card-suggest-list').html() == ''){
+					$$.ajax({
+						url: commonConfig.websitePrefix() + '/api/recommend/similar/' + orderCode,
+						success: function(data) {
+							if(data.statusCode == 'OK') {
+								if(data.body.length > 8){
+									data.body.length = 8;
+								}
+								$$('.mdui-card-agg-list').html(template('mdui-card-aggregation-text', {'list': data.body,'tit':'同類商品','source':'SIMILAR'}));
+							}
+						}
+					});
+				}
+				// 人氣爆款
+				if($$('.mdui-card-suggest-list').html() == ''){
+					$$.ajax({
+						url: commonConfig.websitePrefix() + '/api/recommend/popular',
+						success: function(data) {
+							if(data.statusCode == 'OK') {
+								if(data.body.length > 8){
+									data.body.length = 8;
+								}
+								$$('.mdui-card-suggest-list').html(template('mdui-card-aggregation-text', {'list': data.body,'tit':'人氣爆款','source':'HOT'}));
+							}
+						}
+					});
+				}
+           	},
+            initData : function(){
+				var submitOrder = tools.getURLParam('code').split(',');
+				if(!submitOrder || submitOrder.length == 0 || submitOrder[0] == ''){
+					// 没有订单
+					$$('#type2').show();
+					$$('body').css({background:'#fff'})
+
+					app.methods.circleNumber();
+					window.setInterval("app.methods.circleNumber()", 1000);
+				}else{
+					// 有订单
+					// 清理购物车数据
+					app.methods.initResetCacheData();
+					$$('#type1').show();
+					// 底部推荐
+					app.methods.initUserFootprint(submitOrder[0]);
+					submitOrder.map(function(e){app.methods.initOrderMes(e);})
+					// 清数据
+					app.methods.initClearCache();
+					history.replaceState(null, null , window.location.origin + window.location.pathname);
+				}
+			},
+			initOrderMes: function(orderCode){
+				$$.ajax({
+					url: commonConfig.websitePrefix() + '/api/order/querys/' + orderCode,
+					success: function(data) {
+						if(data.statusCode == 'OK') {
+							var newData = data.body[0];
+							var orderProducts = [];
+							var order_skus = []
+							newData.packageInfos.map(function(e){
+								var sku_infos = [];
+								tools.specialStringToArray(e.sku_infos).map(function(_e){
+									sku_infos.push({
+										"discountPrice": _e.discount_price,
+										"orderProductStatus": _e.order_product_status,
+										"productId": _e.product_id,
+										"productImageUrl": _e.product_image_url,
+										"productSkuBarcode": _e.product_sku_barcode,
+										"productSkuId": _e.product_sku_id,
+										"productSkuName": _e.product_sku_name,
+										"productTitle": _e.product_title,
+										"quantity": _e.quantity,
+									})
+								});
+								orderProducts = orderProducts.concat(sku_infos);
+							});
+							newData['orderProducts'] = orderProducts;
+							newData.packageInfos.map(function(e){
+								order_skus = order_skus.concat(tools.specialStringToArray(e.sku_infos))
+							})
+							// 订单信息加载完毕
+							$$('.mdui-detail').append(template("orderDetail",{data : [newData]}));
+							$$("#see-detail").attr('href','../user/order.html?state=haveBack&&id='+newData.code)
+							$$('#seeDetail').on('click', function () {
+								$$('.orderDetail .order-content').html(template('ordersDetail', {
+									'orderProducts': order_skus,
+									'newOrders': order_skus,
+									'paymentType':newData.paymentType,
+									'orders': newData,
+									'address': {
+										'consignee': '**' + newData['orderAddress'].consignee.substr(-1,1),
+										'tel': newData['orderAddress'].tel.substr(0,2) + '*****' + newData['orderAddress'].tel.substr(-3),
+										'detail': newData['orderAddress'].type == 1 ? '[宅配] ' + newData['orderAddress'].detail : '[超商] ' + newData['orderAddress'].detail,
+										'city': '(' + newData['orderAddress'].city + ' ' + newData['orderAddress'].district + ')'
+									},
+								}))
+								tipWindow.bottomView.open($$('.orderDetail.view-bottom'))
+								// 用於再次購買時  數據處理
+								app.data.buyAginData = order_skus
+								// 复购
+								$$('.orderDetail .buyAgain').off().on('click',function(e){
+									app.methods.isbuyAgain(app.data.buyAginData)
+								})
+							})
+							// 處理監測
+							app.methods.initDataMonitor(newData);
+						}
+					}
+				});
+			},
+			isbuyAgain: function (data) {
+				var list = []
+				data.map(function(e, i){
+					list.push({
+						'productId': parseInt(e.product_id),
+						'productSkuBarcode': e.product_sku_barcode,
+						'productSkuId': parseInt(e.product_sku_id),
+						'quantity': parseInt(e.quantity),
+						'discountPrice': parseInt(e.discount_price),
+						'productTitle': e.product_title,
+						'productSkuName': e.product_sku_name,
+						'productImageUrl': e.product_image_url,
+						"productPrice": e.discount_price - 0,
+						"isSelect": true
+					})
+				})
+				setCache('orderBuyAgin', list)
+				mdui.snackbar({message: '即將再次購買該商品',position: 'top'});
+				setTimeout(function(){
+					window.location.href = "../shopcart/cart.html?buyAgin=true"
+				},1000)
+			},
+            initClearCache : function(){
+				// cacheSessionStorage.removeCache('orderProducts-confirm');
+				// 清倒计时
+				setCache('last_add_time', null, -1);
+			},
+            initResetCacheData : function(userOrderPro){
+				var userOrderPro = getCache('orderProducts-order-buy')
+				// 重新整理購物車--將購買過的產品從購物車清除掉
+				if(!userOrderPro || userOrderPro.length == 0){return}
+            	try{
+					var _newcartProducts = [] , _cartProducts = getCache('orderProducts');
+					// 清除cookie中保存的贈品信息
+					$$.each(userOrderPro , function(index , orderProduct){
+						setCache('tmpGiftProducts-'+ orderProduct.productId , '' , -1);
+					});
+					
+					// 清除已购品
+					_cartProducts && _cartProducts.length > 0 && $$.each(_cartProducts , function(index , cartProduct){
+						var state = 0;
+						$$.each(userOrderPro , function(index , userOrder){
+							// TODO 删除价格校验 && userOrder.discountPrice == cartProduct.discountPrice
+							if(userOrder.productSkuId == cartProduct.productSkuId && cartProduct.isSelect == true){
+								state += 1;
+							}
+						});
+						if(state == 0){
+							_newcartProducts.push(cartProduct);
+						}
+					});
+					setCache('orderProducts' , _newcartProducts);
+					setCache('orderProducts-order-buy', [])
+				}catch(e){
+					console.log(e)
+				}
+            },
+            initDataMonitor : function(newData){
+				if(newData.paymentType == 1){
+					return;
+				}
+				var _num_items = 0 , productItems = [] , contentIds = [] , _values = 0.0;
+				var monitorParams = [];
+				$$.each(newData.orderProducts , function(index , orderProduct){
+					_num_items += parseInt(orderProduct.quantity);
+					productItems.push({
+						id : orderProduct.productId,
+						name : orderProduct.productTitle + '('+ orderProduct.productSkuName +')',
+						quantity : orderProduct.quantity,
+						item_price : orderProduct.discountPrice || orderProduct.originalPrice,
+						price : orderProduct.discountPrice || orderProduct.originalPrice
+					});
+					monitorParams.push({
+						'eventAims': orderProduct.productId,
+						'count': orderProduct.quantity,
+						'eventName': 'SUBMIT',
+						'aimsCategory': 'PRODUCT'
+					});
+					contentIds.push(parseInt(orderProduct.productId));
+					if(orderProduct.presents && orderProduct.presents.length > 0){
+						$$.each(orderProduct.presents , function(index2 , present){
+							_num_items += parseInt(present.quantity);
+							monitorParams.push({
+								'eventAims': present.productId,
+								'count': present.quantity,
+								'eventName': 'SUBMIT',
+								'aimsCategory': 'PRODUCT'
+							});
+							productItems.push({
+								id : present.productId,
+								name : present.productTitle + '('+ present.productSkuName +')',
+								quantity : present.quantity,
+								item_price : present.discountPrice || present.originalPrice,
+								price : present.discountPrice || present.originalPrice
+							});
+							contentIds.push(parseInt(present.productId));
+						});
+					}
+				});
+				_values += newData.discountTotalPrice ; 
+                //TODO 购买成功。。。
+                var _fbgaparams = {
+					content_type: 'product',
+					transaction_id : $$.guid(),
+            		value : _values , 
+            		currency : newData.currency,
+            		content_name : 'checkout',
+            		content_category : 'checkout',
+            		content_ids : contentIds,
+            		num_items : _num_items,
+					contents: productItems,
+					items: productItems
+				};
+				newMonitor.addMonitorData(monitorParams);
+            	try{
+					fbq('track', 'Purchase' , _fbgaparams);
+					gtag('event', 'Purchase', _fbgaparams);
+                    gtag("event", "purchase", _fbgaparams);
+                    _lt('send', 'cv', {
+                        type: 'Purchase'
+                    },['27aef063-382b-4b06-8293-f13e267413d4']);
+                    cacheSessionStorage.removeCache('_fbgaparams');
+                    cacheSessionStorage.removeCache("_realgaparams");
+            	}catch(e){
+            		console.log(e);
+            	}
+            },
+            hasProductPayed : function(products , productskuid){
+           		var result = false;
+           		$$.each(products , function(index , product){
+           			if(product.productSkuId == productskuid){
+           				result = true;
+           				return false;
+           			}
+           		});
+           		return result;
+           	},
+            circleNumber : function(){
+            	if(app.data.leftTime > 0){
+            		app.data.leftTime -= 1;
+            		$$('#type2 .mdui-order-tip .mdui-order-tip-text').html(app.data.leftTime + 's');
+            	}else{
+            		window.location.href = '../shop/index.html';
+            	}
+            },
+            initClipboard :function(){
+				var clipboard = new Clipboard('.mdui-btn-copy');
+                clipboard.on('success', function(e) {
+					mdui.snackbar({message: '複製成功!',position: 'top' , timeout : 1000});
+					newMonitor.addMonitor({
+						'eventAims': 'COPY',
+						'eventName': 'CLICK',
+						'aimsCategory': 'EVENT',
+					});
+				});
+				clipboard.on('error', function(e) {
+					mdui.snackbar({message: '複製失敗,請您手動複製!',position: 'top' , timeout : 2000});
+				});
+			},
+			getClick: function(){
+				$$('.toHome').on('click', function(e){
+					e.stopPropagation();
+					cacheSessionStorage.setCache("i_to_home", {
+						'eventAims': 'HOME_ICON',
+						'eventName': 'CLICK',
+						'aimsFromUrl': location.href,
+						'aimsCategory': 'EVENT',
+					});
+				});
+			},
+        } ,
+        init : function(){
+            app.methods.init();
+        }
+    };
+    $$(function () {
+        app.init();
+    });
+</script>
+
+

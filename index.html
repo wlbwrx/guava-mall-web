@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+
+		<meta property="og:type"          content="website" />
+		<meta property="og:title"         content="【阿噗購物】-購物，從阿噗開始" />
+		<meta property="og:description"   content="阿噗特賣，您的穿搭生活頻道。主營：女裝、男裝、鞋包配飾、美妝護膚、家居生活。滿NT$699免運 / 支持貨到付款 / 官方自營 / 100%正品保障 / 7天無憂退換貨。" />
+		<meta property="og:image"         content="https://d3o2c7bn83e5x8.cloudfront.net/image/shareIcon.jpg" />
+		<title>【阿噗購物】-購物，從阿噗開始</title>
+		<meta name="description" content="阿噗特賣，您的穿搭生活頻道。主營：女裝、男裝、鞋包配飾、美妝護膚、家居生活。滿NT$699免運 / 支持貨到付款 / 官方自營 / 100%正品保障 / 7天無憂退換貨。!">
+		<link rel="apple-touch-icon-precomposed" href="https://d3o2c7bn83e5x8.cloudfront.net/image/shareIcon.jpg">
+		
+		<!-- <meta http-equiv="Refresh" content="0; url=shop/index.html" /> -->
+		<meta name="google-site-verification" content="a3WEnwgZ_FcabGTmMSO6g50wtWQa_wFAS0PjnZ9rwN0" />
+		<meta name="google-site-verification" content="P2fm2-zmVc_izaSI_NJQCYdguWpqbjTbBQFd_jD0NwI" />
+		<!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
+		
+		<script>
+			var montiorTime={start:0,end:0};function setStart(){montiorTime.start=(new Date).getTime()}function setEnd(){montiorTime.end=(new Date).getTime(),cacheSessionStorage.setCache("montiorTime",{aimsFromUrl:location.href,params:[montiorTime]})}
+		</script>
+		
+		<script src="https://d3o2c7bn83e5x8.cloudfront.net/dist/mdui/js/mdui.min.js"></script>
+		<script src="./js/common.js?v=20210603"></script>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117174835-1"></script>
+		<script>
+		  	window.dataLayer = window.dataLayer || [];
+		  	function gtag(){dataLayer.push(arguments);}
+	  		gtag('js', new Date());
+		
+		  	gtag('config', 'UA-117174835-1');
+		  	gtag("config",commonConfig.getGATracking());
+			if(commonConfig.getGATracking() != 'UA-117174835-1'){
+				gtag("config",'UA-117174835-1');
+			}
+		</script>
+		<script>
+			var app = {
+				datas : {
+					adlk : tools.getURLParam('adlk')
+				},
+				methods : {
+					initadlk : function(){
+						if(!app.datas.adlk){
+							window.location.href = "shop/index.html" ; 
+							cacheSessionStorage.setCache('_index_' , true);
+						}else{
+							$$.ajax({
+								method: 'GET',
+								url: commonConfig.websitePrefix() + '/api/ad/link/' + app.datas.adlk,
+								beforeSend: function(xhr) {
+									tools.loading();
+								},
+								success : function(result){
+									if(result.statusCode == 'OK' && result.body.linkUrl){
+										var moduleData = result.body;
+										moduleData.adLinkProducts.map(function(e){
+											if(e.product && e.product.flag && e.product.flag != ''){
+												e.product.flag = e.product.flag.trim().split(',');
+											}
+										});
+										cacheSessionStorage.setCache("adlk-" + app.datas.adlk , moduleData , 1);
+										window.location.href = moduleData.linkUrl + (moduleData.linkUrl.includes('?') ? '&' : '?') + 'adlk=' + app.datas.adlk + '&pixelId=' + moduleData.pixelId + '&affiliate=' + moduleData.affiliate ;
+									}else{
+										window.location.href = "shop/index.html" ; 
+									}
+								},
+								complete: function(xhr, textStatus) {
+									tools.hideLoading();
+								}
+							});
+						}
+					}
+				},
+				init : function(){
+					app.methods.initadlk();
+				}
+			}
+			$$(function() {
+				app.init();
+			});
+		</script>
+	</head>
+	<body onload="setStart()" onbeforeunload="setEnd()">
+	</body>
+</html>
